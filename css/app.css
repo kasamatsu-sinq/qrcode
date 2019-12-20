@@ -1,99 +1,121 @@
 *,
 *:before,
 *:after {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: sans-serif;
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+.content_wrapper{
+	height:100vh;
+}
+
+h1 {
+	padding: 20px;
+
+	font-size: 32px;
+	text-align: center;
 }
 
 .reader {
-    width: 100vw;
-    height: 100%;
-    position: relative;
+	width: 80%;
+	height: 50%;
+	position: relative;
+	margin: 0 auto;
+}
+
+.result_box {
+	width: 80%;
+	height: 30px;
+	position: relative;
+	margin: 40px auto 0;
+	border:3px solid #333;
 }
 
 .reader-video {
-    background-color: #000;
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
+	background-color: #000;
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
 }
 
 .modal-overlay {
-    display: none;
-    position: fixed;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100%;
-    background-color: rgba(0, 0, 0, .7);
+	display: none;
+	position: fixed;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
 }
 
 .modal-overlay.is-show {
-    display: flex;
+	display: flex;
 }
 
 .modal {
-    width: 80%;
-    background: #fff;
-    border-radius: 10px;
+	width: 80%;
+	background: #fff;
+	border-radius: 10px;
 }
 
 .modal-cnt {
-    padding: 30px 15px;
+	padding: 30px 15px;
 }
 
 .modal-title {
-    display: block;
-    margin-bottom: 15px;
-    text-align: center;
+	display: block;
+	margin-bottom: 15px;
+	text-align: center;
 }
 
 .modal-result {
-    word-break: break-all;
+	word-break: break-all;
 }
 
 .modal-btn {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    display: block;
-    background: none;
-    border: none;
-    border-top: 1px solid #ddd;
-    width: 100%;
-    color: #333;
-    padding: 20px;
-    text-align: center;
-    font-size: 18px;
-    text-decoration: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	display: block;
+	background: none;
+	border: none;
+	border-top: 1px solid #ddd;
+	width: 100%;
+	color: #333;
+	padding: 20px;
+	text-align: center;
+	font-size: 18px;
+	text-decoration: none;
 }
 
 .unsupported {
-    display: none;
-    flex-direction: column;
-    position: fixed;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100%;
-    color: #fff;
+	display: none;
+	flex-direction: column;
+	position: fixed;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100%;
+	color: #fff;
 }
 
 .unsupported.is-show {
-    display: flex;
+	display: flex;
 }
 
 .unsupported-title {
-    font-weight: bold;
-    font-size: 2em;
+	font-weight: bold;
+	font-size: 2em;
 }
