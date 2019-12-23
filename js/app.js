@@ -31,7 +31,7 @@ const openModal = function (url) {
 }
 
 window.onload=function(){
-	document.querySelector(".result_box").innerText = 読み込まれたらここに表示;
+	document.querySelector(".result_box").innerText = '読み込まれたらここに表示';
 }
 
 if (!navigator.mediaDevices) {
