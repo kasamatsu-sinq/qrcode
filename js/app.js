@@ -32,12 +32,6 @@ const openModal = function(url) {
     // document.querySelector('#js-modal').classList.add('is-show')
 }
 
-document.querySelector('#js-modal-close')
-    .addEventListener('click', () => {
-        document.querySelector('#js-modal').classList.remove('is-show')
-        checkImage()
-    })
-
 navigator.mediaDevices
     .getUserMedia({
         audio: false,
