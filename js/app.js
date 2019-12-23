@@ -30,7 +30,9 @@ const openModal = function (url) {
 	// document.querySelector('#js-modal').classList.add('is-show')
 }
 
-console.log(navigator.mediaDevices);
+window.onload=function(){
+	document.querySelector(".result_box").innerText = 読み込まれたらここに表示;
+}
 
 if (!navigator.mediaDevices) {
 	document.querySelector('#js-unsupported').classList.add('is-show')
