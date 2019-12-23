@@ -99,6 +99,7 @@ h1 {
 }
 
 .unsupported {
+	background:#000;
 	display: none;
 	flex-direction: column;
 	position: fixed;
