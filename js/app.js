@@ -30,6 +30,8 @@ const openModal = function (url) {
 	// document.querySelector('#js-modal').classList.add('is-show')
 }
 
+console.log(navigator.mediaDevices);
+
 if (!navigator.mediaDevices) {
 	document.querySelector('#js-unsupported').classList.add('is-show')
 } else {
