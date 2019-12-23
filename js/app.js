@@ -51,6 +51,9 @@ if (!navigator.mediaDevices) {
 				checkImage()
 			}
 		})
+		.catch(function(err) {
+        document.querySelector('#js-unsupported').classList.add('is-show')
+    })
 
 }
 
