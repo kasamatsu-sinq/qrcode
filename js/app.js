@@ -35,7 +35,7 @@ document.querySelector('#js-modal-close')
 		document.querySelector('#js-modal').classList.remove('is-show')
 		setTimeout(function(){
 			checkImage();
-		},500);
+		},2000);
 	})
 
 window.onload = function () {
