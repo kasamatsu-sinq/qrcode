@@ -4,7 +4,7 @@ const video = document.querySelector('#js-video')
 const canvas = document.querySelector('#js-canvas')
 const ctx = canvas.getContext('2d')
 
-const checkImage = () => {
+const checkImage = function(){
 	// 取得している動画をCanvasに描画
 	ctx.drawImage(video, 0, 0, canvas.width, canvas.height)
 
@@ -19,7 +19,7 @@ const checkImage = () => {
 	if (code) {
 		openModal(code.data)
 	} else {
-		setTimeout(() => { checkImage() }, 200)
+		setTimeout(function(){ checkImage() }, 200)
 	}
 }
 
@@ -31,9 +31,11 @@ const openModal = function (url) {
 }
 
 document.querySelector('#js-modal-close')
-	.addEventListener('click', () => {
+	.addEventListener('click', function(){
 		document.querySelector('#js-modal').classList.remove('is-show')
-		checkImage()
+		setTimeout(function(){
+			checkImage();
+		},500);
 	})
 
 window.onload = function () {
