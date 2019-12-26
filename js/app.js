@@ -37,11 +37,7 @@ document.querySelector('#js-modal-close')
 			checkImage();
 		},2000);
 	})
-
-window.onload = function () {
-	document.querySelector(".result_box").innerText = '読み込まれたらここに表示';
-}
-
+	
 if (!navigator.mediaDevices) {
 	document.querySelector('#js-unsupported').classList.add('is-show')
 } else {
@@ -62,7 +58,8 @@ if (!navigator.mediaDevices) {
 			}
 		})
 		.catch(function (err) {
-			document.querySelector('#js-unsupported').classList.add('is-show')
+			document.querySelector('#js-unsupported').classList.add('is-show');
+			document.querySelector('h1').classList.add('disable');
 		})
 
 }

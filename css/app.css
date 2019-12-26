@@ -20,8 +20,14 @@ body {
 h1 {
 	padding: 20px;
 
-	font-size: 32px;
+	font-size: 36px;
 	text-align: center;
+}
+
+h1.disable{
+	position: relative;
+	z-index: 2;
+	color: #fff;
 }
 
 .reader {
