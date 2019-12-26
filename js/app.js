@@ -24,10 +24,10 @@ const checkImage = () => {
 }
 
 const openModal = function (url) {
-	document.querySelector(".result_box").innerText = url;
-	// document.querySelector('#js-result').innerText = url
-	// document.querySelector('#js-link').setAttribute('href', url)
-	// document.querySelector('#js-modal').classList.add('is-show')
+	// document.querySelector(".result_box").innerText = url;
+	document.querySelector('#js-result').innerText = url
+	document.querySelector('#js-link').setAttribute('href', url)
+	document.querySelector('#js-modal').classList.add('is-show')
 }
 
 document.querySelector('#js-modal-close')
