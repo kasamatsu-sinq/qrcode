@@ -30,7 +30,13 @@ const openModal = function (url) {
 	// document.querySelector('#js-modal').classList.add('is-show')
 }
 
-window.onload=function(){
+document.querySelector('#js-modal-close')
+	.addEventListener('click', () => {
+		document.querySelector('#js-modal').classList.remove('is-show')
+		checkImage()
+	})
+
+window.onload = function () {
 	document.querySelector(".result_box").innerText = '読み込まれたらここに表示';
 }
 
@@ -53,9 +59,9 @@ if (!navigator.mediaDevices) {
 				checkImage()
 			}
 		})
-		.catch(function(err) {
-        document.querySelector('#js-unsupported').classList.add('is-show')
-    })
+		.catch(function (err) {
+			document.querySelector('#js-unsupported').classList.add('is-show')
+		})
 
 }
 
